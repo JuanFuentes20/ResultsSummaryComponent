@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="index.css" >
   <title>Frontend Mentor | Results summary component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,33 +18,28 @@
   </style>
 </head>
 <body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <script type="module" src="index.js"></script>
+<div class="container">
+  <div class="result">
+    <p style="font-size: 18px; font-weight: 200;">Your Result</p>
+    <div class="result-circle">
+      <p>76</p>
+      <p>of 100</p>
+    </div>
+    <p style="font-size: 25px;">Great</p>
+    <p style="font-size: 16px; font-weight: 100;">You scored higher than 65% of the people who have taken these tests.</p>
   </div>
+  <div class="summary">
+    <p style="font-weight: 500; font-size: 20px;">Summary</p>
+    <ul class="categories"></ul>
+    <button>Continue</button>
+  </div>
+  <div class="footer attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Juan Fuentes</a>.
+  </div>
+
+</div>
+
 </body>
 </html>
