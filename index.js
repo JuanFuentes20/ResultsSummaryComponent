@@ -1,9 +1,9 @@
-import jsonData from './data.json' assert { type: 'json' };
-
-const categories = document.querySelector('.categories')
-console.log(jsonData)
-
-jsonData.forEach(category => {
+fetch('./data.json')
+  .then(response => response.json())
+  .then(data => {
+    //console.log(data);
+    const categories = document.querySelector('.categories')
+data.forEach(category => {
     const listElement = document.createElement('li')
     const listDiv = document.createElement('div')
     listDiv.classList.add('category')
@@ -44,3 +44,8 @@ jsonData.forEach(category => {
     
     categories.appendChild(listElement)
 })
+
+  })
+  .catch(error => {
+    console.error('Error loading JSON data:', error);
+  });
