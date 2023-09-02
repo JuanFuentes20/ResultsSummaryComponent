@@ -41,6 +41,7 @@ body {
     width: 600px;
     border-radius: 20px;
     background-color: var(--clr-neutral-white);
+    box-shadow: 15px 10px 15px hsl(212, 45%, 89%);
 }
 
 .result {
@@ -65,7 +66,7 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: linear-gradient(to top, var(--clr-gradient-circle-persian-blue), var(--clr-gradient-circle-violet-blue));;
+    background: linear-gradient(to top, var(--clr-gradient-circle-persian-blue), var(--clr-gradient-circle-violet-blue));
 }
 
 .result-circle :nth-child(1) {
